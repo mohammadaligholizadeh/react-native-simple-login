@@ -7,17 +7,33 @@ import {
     View
 } from 'react-native';
 
+
+
 export default class Login extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            user:'',
+            pass:''
+        }
+    }
+
+    user = (text) => {
+        this.setState({user:text})
+    }
+
+    pass = (text) => {
+        this.setState({pass:text})
+    }
 
     render(){
         return(
-            <View style={styles.container}>
+            <View>
 
-                <TextInput style={styles.input} placeholder={"نام کاربری"} />
+                <TextInput style={styles.input} onChangeText={this.user} placeholder={"نام کاربری"} />
 
-                <TextInput secureTextEntry={true} style={styles.input} placeholder={"کلمه ی عبور"} />
-
-                <Button style={styles.button} title="ورود به سیستم" />
+                <TextInput secureTextEntry={true} style={styles.input} onChangeText={this.pass} placeholder={"کلمه ی عبور"} />
 
             </View>
         );
@@ -27,9 +43,6 @@ export default class Login extends Component{
 
 const styles =
     StyleSheet.create({
-        container:{
-            flex:1,
-        },
         button:{
             color:'#25c6da',
         },

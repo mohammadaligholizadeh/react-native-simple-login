@@ -11,7 +11,7 @@ export default class Logindata extends Component{
 
     render(){
         return(
-            <View style={styles.container}>
+            <View>
 
                 <Image source={require('../../../img/logo.png')} style={styles.image} />
 
@@ -27,9 +27,6 @@ export default class Logindata extends Component{
 
 const styles =
     StyleSheet.create({
-        container:{
-            flex:1,
-        },
         image: {
             width:200,
             height:200,

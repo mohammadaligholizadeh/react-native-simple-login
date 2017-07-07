@@ -1,5 +1,5 @@
 var remote = {
-    getContent(){
+    getContent(user,pass){
         var url = "http://mediastream.ir/login.php";
         return fetch(url, {
             method: 'POST',
@@ -8,8 +8,8 @@ var remote = {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                username: 'mohammad',
-                password: '123456',
+                username: user,
+                password: pass,
             })
         }
         ).then((res) => res.json());
