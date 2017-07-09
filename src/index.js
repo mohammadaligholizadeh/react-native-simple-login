@@ -76,9 +76,13 @@ export default class loginapp extends Component {
 
         {/*<Login />*/}
 
+        <View>
           <TextInput style={styles.input} onChangeText={this.user} placeholder={"نام کاربری"} />
+        </View>
 
+        <View>
           <TextInput secureTextEntry={true} style={styles.input} onChangeText={this.pass} placeholder={"کلمه ی عبور"} />
+        </View>
 
           <TouchableOpacity onPress={()=>success(this.state.user,this.state.pass)}>
               <Text style={styles.button}>ورود به سیستم</Text>
