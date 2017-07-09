@@ -1,19 +1,12 @@
-var remote = {
-    getContent(user,pass){
-        var url = "http://mediastream.ir/login.php";
-        return fetch(url, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                username: user,
-                password: pass,
-            })
-        }
-        ).then((res) => res.json());
-    }
-};
 
-module.exports = remote;
+class Remote {
+  static getContent(user,pass) {
+    const url = "http://mediastream.ir/login.php";
+    const headers = { 'Content-Type': 'application/json' };
+    const body = JSON.stringify({ username: user, password: pass, });
+    return fetch(url, {method: 'POST', headers, body})
+      .then((res) => res.json());
+  }
+}
+
+export default Remote;
