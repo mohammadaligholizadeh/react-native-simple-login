@@ -17,7 +17,8 @@ import {
 // import Login from './src/components/login/login';
 import Logindata from './src/components/data/data';
 import remote from './src/components/action/remote';
-// import { StackNavigator } from 'react-navigation';
+import ifclause from './src/components/login/ifclause';
+import { StackNavigator } from 'react-navigation';
 
 export default class loginapp extends Component {
 
@@ -47,7 +48,7 @@ export default class loginapp extends Component {
     }
 
   render() {
-      // var {navigator} = this.props
+      // const { navigate } = this.props.navigation;
 
       const success = (user,pass) => {
           remote.getContent(user,pass).then((res) => {
@@ -57,13 +58,22 @@ export default class loginapp extends Component {
           });
       }
 
+      // const { navigate } = this.props.navigation;
+
     return (
       <View style={styles.container}>
+
+              {ifclause(this.state.content == "ERROR",<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>,<View style={styles.pass}><Text style={styles.notify}>نام کاربری صحیح است</Text></View>) }
+
         <Logindata />
 
-          <Text style={styles.notify}>
-              {this.state.content}
-          </Text>
+          {/*<Text style={styles.notify}>*/}
+              {/*{this.state.content}*/}
+          {/*</Text>*/}
+
+          {/*if({this.state.content} == "SUCCESS"){*/}
+
+      {/*}*/}
 
         {/*<Login />*/}
 
@@ -88,6 +98,12 @@ var styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
     flexDirection: 'column',
   },
+    error:{
+      backgroundColor:"#ff8686",
+    },
+    pass:{
+      backgroundColor:'green',
+    },
     notify: {
         textAlign: 'center',
         color: '#333333',
