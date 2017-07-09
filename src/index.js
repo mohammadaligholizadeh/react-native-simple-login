@@ -17,7 +17,6 @@ import {
 // import Login from './src/components/login/login';
 import Logindata from './components/data/data';
 import remote from './components/action/remote';
-import ifclause from './components/login/ifclause';
 import { StackNavigator } from 'react-navigation';
 
 export default class loginapp extends Component {
@@ -63,7 +62,7 @@ export default class loginapp extends Component {
     return (
       <View style={styles.container}>
 
-              {ifclause(this.state.content == "ERROR",<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>,<View style={styles.pass}><Text style={styles.notify}>نام کاربری صحیح است</Text></View>) }
+        {(this.state.content == "ERROR") ? (<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>) : (<View style={styles.pass}><Text style={styles.notify}>نام کاربری صحیح است</Text></View>) }
 
         <Logindata />
 
