@@ -67,7 +67,7 @@ export default class loginapp extends Component {
     return (
       <View style={styles.container}>
 
-        {(this.state.content == "ERROR") ? (<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>) : (<View style={styles.pass}><Text style={styles.notify}>نام کاربری صحیح است</Text></View>) }
+          {(this.state.content == "ERROR") ? (<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>) : null }
 
         <Logindata />
 
@@ -108,16 +108,19 @@ var styles = StyleSheet.create({
   },
     error:{
       backgroundColor:"#ff8686",
+      width:410,
+      height:80,
+      flexDirection: 'column',
+      position: 'absolute',
+      top:0,
     },
     pass:{
       backgroundColor:'green',
     },
     notify: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
+        color: '#F5FCFF',
         fontWeight:'bold',
-        // textColor:'#506482'
+        textAlign:'center',
     },
     button: {
         backgroundColor: '#25c6da',
