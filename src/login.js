@@ -6,12 +6,12 @@
 
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View
+    AppRegistry,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View
 } from 'react-native';
 
 // import Login from './src/components/login/login';
@@ -22,11 +22,11 @@ export default class loginapp extends Component {
 
     constructor(props){
         super(props);
-            this.state = {
-                content:[],
-                user:'',
-                pass:''
-            }
+        this.state = {
+            content:[],
+            user:'',
+            pass:''
+        }
     }
 
     // componentWillMount(){
@@ -45,77 +45,77 @@ export default class loginapp extends Component {
         this.setState({pass:text})
     }
 
-  render() {
-      // const { navigate } = this.props.navigation;
+    render() {
+        // const { navigate } = this.props.navigation;
 
-      const success = (user,pass) => {
-          remote.getContent(user,pass).then((res) => {
-              this.setState({
-                  content:res.code
-              });
-              if (res.code === 'SUCCESS') {
-                this.props.navigation.navigate('ProfileScreen', {
-                  name: res.data.name,
-                  fname: res.data.fname,
+        const success = (user,pass) => {
+            remote.getContent(user,pass).then((res) => {
+                this.setState({
+                    content:res.code
                 });
-              }
-          });
-      }
+                if (res.code === 'SUCCESS') {
+                    this.props.navigation.navigate('ProfileScreen', {
+                        name: res.data.name,
+                        fname: res.data.fname,
+                    });
+                }
+            });
+        }
 
-      // const { navigate } = this.props.navigation;
+        // const { navigate } = this.props.navigation;
 
-    return (
-      <View style={styles.container}>
+        return (
+            <View style={styles.container}>
 
-          {(this.state.content == "ERROR") ? (<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>) : null }
+                {(this.state.content == "ERROR") ? (<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>) : null }
 
-        <Logindata />
+                <Logindata />
 
-          {/*<Text style={styles.notify}>*/}
-              {/*{this.state.content}*/}
-          {/*</Text>*/}
+                {/*<Text style={styles.notify}>*/}
+                {/*{this.state.content}*/}
+                {/*</Text>*/}
 
-          {/*if({this.state.content} == "SUCCESS"){*/}
+                {/*if({this.state.content} == "SUCCESS"){*/}
 
-      {/*}*/}
+                {/*}*/}
 
-        {/*<Login />*/}
+                {/*<Login />*/}
 
-        <View>
-          <TextInput style={styles.input} onChangeText={this.user} placeholder={"نام کاربری"} />
-        </View>
+                <View>
+                    <TextInput style={styles.input} onChangeText={this.user} placeholder={"نام کاربری"} />
+                </View>
 
-        <View>
-          <TextInput secureTextEntry={true} style={styles.input} onChangeText={this.pass} placeholder={"کلمه ی عبور"} />
-        </View>
+                <View>
+                    <TextInput secureTextEntry={true} style={styles.input} onChangeText={this.pass} placeholder={"کلمه ی عبور"} />
+                </View>
 
-          <TouchableOpacity onPress={()=>success(this.state.user,this.state.pass)}>
-              <Text style={styles.button}>ورود به سیستم</Text>
-          </TouchableOpacity>
-        
-      </View>
-    );
-  }
+                <TouchableOpacity onPress={()=>success(this.state.user,this.state.pass)}>
+                    <Text style={styles.button}>ورود به سیستم</Text>
+                </TouchableOpacity>
+
+            </View>
+        );
+    }
 }
 
 var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-    flexDirection: 'column',
-  },
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+        flexDirection: 'column',
+    },
     error:{
-      backgroundColor:"#ff8686",
-      width:410,
-      height:80,
-      flexDirection: 'column',
-      position: 'absolute',
-      top:0,
+        backgroundColor:"#ff8686",
+        width:410,
+        height:80,
+        flexDirection: 'column',
+        position: 'absolute',
+        top:0,
     },
     pass:{
-      backgroundColor:'green',
+        backgroundColor:'green',
     },
     notify: {
         color: '#F5FCFF',
