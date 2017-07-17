@@ -57,6 +57,8 @@ export default class loginapp extends Component {
                     this.props.navigation.navigate('ProfileScreen', {
                         name: res.data.name,
                         fname: res.data.fname,
+                        age: res.data.age,
+                        pic: res.data.profilepic,
                     });
                 }
             });
