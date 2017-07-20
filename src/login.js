@@ -94,6 +94,8 @@ export default class loginapp extends Component {
                     </View>
                 </View>
 
+                <View style={{height:60}} />
+
                 <TouchableOpacity onPress={()=>success(this.state.user,this.state.pass)}>
                     <Text style={styles.button}>ورود به سیستم</Text>
                 </TouchableOpacity>
@@ -108,7 +110,7 @@ var styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#fcfcfc',
         flexDirection: 'column',
         // height:5,
     },
@@ -131,34 +133,37 @@ var styles = StyleSheet.create({
     button: {
         backgroundColor: '#25c6da',
         color: 'white',
-        height: 40,
+        height: 45,
         lineHeight: 30,
         marginTop: 10,
         textAlign: 'center',
-        width: 250
+        width: 300,
+        borderRadius: 5,
+        fontFamily:'IRANSansMobile(NoEn)_Medium',
     },
     input: {
-        height: 50,
+        height: 60,
         width:300,
         borderColor: 'gray',
         borderWidth: 1,
         textAlign:'right',
         paddingRight:40,
         borderRadius: 5,
+        fontFamily:'IRANSansMobile(NoEn)_Medium',
     },
     userimg:{
-        width:28,
-        height:26,
+        width:24,
+        height:22,
         position:'absolute',
         right:12,
-        top:10,
+        top:15,
     },
     lockimg:{
-        width:18,
-        height:28,
+        width:14,
+        height:24,
         position:'absolute',
         right:15,
-        top:5,
+        top:15,
     },
     texticon:{
         flexDirection:'row',

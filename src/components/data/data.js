@@ -39,8 +39,8 @@ const styles =
             textAlign: 'center',
             color: '#333333',
             marginBottom: 5,
-            fontWeight:'bold',
-            fontFamily:"IRANSans_Bold",
-            fontSize: 30,
+            // fontWeight:'bold',
+            fontFamily:'IRANSansMobile(NoEn)_Medium',
+            fontSize: 20,
         },
     });

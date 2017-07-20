@@ -19,6 +19,7 @@ export default class ProfileScreen extends Component {
                     <Text style={styles.data}>نام خانوادگی :<Text style={styles.res}>{this.props.navigation.state.params.fname}</Text></Text>
                     <Text style={styles.data}>سن :<Text style={styles.res}>{this.props.navigation.state.params.age}</Text></Text>
                 </View>
+                <View style={{height:80}} />
                 <TouchableOpacity onPress={()=>logout()}>
                     <Text style={styles.button}>خروج از سیستم</Text>
                 </TouchableOpacity>
@@ -33,21 +34,25 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#fcfcfc',
         flexDirection: 'column',
     },
     blue: {
         backgroundColor:'#e4fbff',
-        width:300,
+        width:250,
         height:200,
-        borderStyle:'solid',
+        borderRadius: 5,
+        borderWidth: 0.5,
+        borderColor: '#979797',
     },
     data:{
         textAlign:'center',
         lineHeight:50,
+        fontFamily:'IRANSansMobile(NoEn)_Medium',
     },
     res:{
         fontWeight:'bold',
+        fontFamily:'IRANSansMobile(NoEn)_Medium',
     },
     image:{
         height:128,
@@ -57,10 +62,12 @@ const styles = StyleSheet.create({
     button:{
         backgroundColor:'#f66748',
         color: 'white',
-        height: 30,
+        height: 45,
         lineHeight: 30,
         marginTop: 10,
         textAlign: 'center',
-        width: 250
+        fontFamily:'IRANSansMobile(NoEn)_Medium',
+        width: 250,
+        borderRadius: 5,
     }
 });
