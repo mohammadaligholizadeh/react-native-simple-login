@@ -11,6 +11,7 @@ import {
     Text,
     TextInput,
     TouchableOpacity,
+    Image,
     View
 } from 'react-native';
 
@@ -72,6 +73,7 @@ export default class loginapp extends Component {
                 {(this.state.content == "ERROR") ? (<View style={styles.error}><Text style={styles.notify}>نام کاربری یا کلمه عبور نامعتبر است</Text></View>) : null }
 
                 <Logindata />
+                <View style={{height:20}} />
 
                 {/*<Text style={styles.notify}>*/}
                 {/*{this.state.content}*/}
@@ -82,13 +84,14 @@ export default class loginapp extends Component {
                 {/*}*/}
 
                 {/*<Login />*/}
-
-                <View>
-                    <TextInput style={styles.input} onChangeText={this.user} placeholder={"نام کاربری"} />
-                </View>
-
-                <View>
-                    <TextInput secureTextEntry={true} style={styles.input} onChangeText={this.pass} placeholder={"کلمه ی عبور"} />
+                <View style={styles.textall}>
+                    <View style={styles.texticon}>
+                        <TextInput style={styles.input} onChangeText={this.user} placeholder={"نام کاربری"} underlineColorAndroid="rgba(0,0,0,0)" /><Image source={require('../img/user.png')} style={styles.userimg} />
+                    </View>
+                    <View style={{height:10}} />
+                    <View style={styles.texticon}>
+                        <TextInput secureTextEntry={true} style={styles.input} onChangeText={this.pass} placeholder={"کلمه ی عبور"} underlineColorAndroid="rgba(0,0,0,0)" /><Image source={require('../img/lock.png')} style={styles.lockimg} />
+                    </View>
                 </View>
 
                 <TouchableOpacity onPress={()=>success(this.state.user,this.state.pass)}>
@@ -107,6 +110,7 @@ var styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
         flexDirection: 'column',
+        // height:5,
     },
     error:{
         backgroundColor:"#ff8686",
@@ -127,7 +131,7 @@ var styles = StyleSheet.create({
     button: {
         backgroundColor: '#25c6da',
         color: 'white',
-        height: 30,
+        height: 40,
         lineHeight: 30,
         marginTop: 10,
         textAlign: 'center',
@@ -138,6 +142,25 @@ var styles = StyleSheet.create({
         width:300,
         borderColor: 'gray',
         borderWidth: 1,
-        textAlign:'right'
+        textAlign:'right',
+        paddingRight:40,
+        borderRadius: 5,
+    },
+    userimg:{
+        width:28,
+        height:26,
+        position:'absolute',
+        right:12,
+        top:10,
+    },
+    lockimg:{
+        width:18,
+        height:28,
+        position:'absolute',
+        right:15,
+        top:5,
+    },
+    texticon:{
+        flexDirection:'row',
     },
 });
