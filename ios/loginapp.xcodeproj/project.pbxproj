@@ -81,6 +81,7 @@
 		DEEA5C4C43964F25BEC53C36 /* IRANSansWeb_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2234379CE14463E8CE89BFA /* IRANSansWeb_Medium.ttf */; };
 		18E4DA5BC5424BD3AEEBBDAA /* IRANSansWeb_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105F20A36190498282BD009E /* IRANSansWeb_UltraLight.ttf */; };
 		8E6AEC8546F1435BA57E9008 /* IRANSansWeb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD04A4804404F56ABE1134D /* IRANSansWeb.ttf */; };
+		19A362064E32486BADAF8F6E /* IRANSansMobile(NoEn)_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 618529719C30459FAB9FC533 /* IRANSansMobile(NoEn)_Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,6 +347,7 @@
 		F2234379CE14463E8CE89BFA /* IRANSansWeb_Medium.ttf */ = {isa = PBXFileReference; name = "IRANSansWeb_Medium.ttf"; path = "../src/assets/fonts/WebFonts/fonts/ttf/IRANSansWeb_Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		105F20A36190498282BD009E /* IRANSansWeb_UltraLight.ttf */ = {isa = PBXFileReference; name = "IRANSansWeb_UltraLight.ttf"; path = "../src/assets/fonts/WebFonts/fonts/ttf/IRANSansWeb_UltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		AAD04A4804404F56ABE1134D /* IRANSansWeb.ttf */ = {isa = PBXFileReference; name = "IRANSansWeb.ttf"; path = "../src/assets/fonts/WebFonts/fonts/ttf/IRANSansWeb.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		618529719C30459FAB9FC533 /* IRANSansMobile(NoEn)_Medium.ttf */ = {isa = PBXFileReference; name = "IRANSansMobile(NoEn)_Medium.ttf"; path = "../assets/fonts/IRANSansMobile(NoEn)_Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -624,6 +626,7 @@
 				F2234379CE14463E8CE89BFA /* IRANSansWeb_Medium.ttf */,
 				105F20A36190498282BD009E /* IRANSansWeb_UltraLight.ttf */,
 				AAD04A4804404F56ABE1134D /* IRANSansWeb.ttf */,
+				618529719C30459FAB9FC533 /* IRANSansMobile(NoEn)_Medium.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1033,6 +1036,7 @@
 				DEEA5C4C43964F25BEC53C36 /* IRANSansWeb_Medium.ttf in Resources */,
 				18E4DA5BC5424BD3AEEBBDAA /* IRANSansWeb_UltraLight.ttf in Resources */,
 				8E6AEC8546F1435BA57E9008 /* IRANSansWeb.ttf in Resources */,
+				19A362064E32486BADAF8F6E /* IRANSansMobile(NoEn)_Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
