@@ -12,8 +12,9 @@ export default class ProfileScreen extends Component {
         return (
             <View style={styles.container}>
                 <View>
-                    <Image style={styles.image} source={{uri:'https:\/\/media.licdn.com\/mpr\/mpr\/shrinknp_400_400\/AAEAAQAAAAAAAAeSAAAAJGRlODc0Y2IwLTU3MTYtNDQ2MC05ZDU0LWQzZDM5OGIwMjVjNw.jpg'}} />
+                    <Image style={styles.image} source={require('../img/profile.jpg')} />
                 </View>
+                <View style={{height:40}} />
                 <View style={styles.blue}>
                     <Text style={styles.data}>نام :<Text style={styles.res}>{this.props.navigation.state.params.name}</Text></Text>
                     <Text style={styles.data}>نام خانوادگی :<Text style={styles.res}>{this.props.navigation.state.params.fname}</Text></Text>
