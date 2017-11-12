@@ -12,12 +12,12 @@ export default class Logindata extends Component{
     render(){
         return(
             <View>
-
-                <Image source={require('../../../img/logo.png')} style={styles.image} />
-
-                <Text style={styles.notify} >
-                    اطلاعات خود را وارد کنید
-                </Text>
+                <View style={styles.imgpos}>
+                    <Image source={require('../../../img/logo.png')} style={styles.image} />
+                </View>
+                <View>
+                    <Text style={styles.notify} >اطلاعات خود را وارد کنید</Text>
+                </View>
 
             </View>
         );
@@ -32,11 +32,15 @@ const styles =
             height:200,
             resizeMode: 'contain'
         },
+        imgpos:{
+            alignItems:"center",
+        },
         notify: {
             textAlign: 'center',
             color: '#333333',
             marginBottom: 5,
-            fontWeight:'bold',
-            // textColor:'#506482'
+            // fontWeight:'bold',
+            fontFamily:'IRANSansMobile(NoEn)_Medium',
+            fontSize: 20,
         },
     });

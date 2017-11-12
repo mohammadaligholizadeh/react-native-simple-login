@@ -39,11 +39,60 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
+	<string/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IRANSans(FaNum)_Bold.ttf</string>
+		<string>IRANSans(FaNum)_Light.ttf</string>
+		<string>IRANSans(FaNum)_Medium.ttf</string>
+		<string>IRANSans(FaNum)_UltraLight.ttf</string>
+		<string>IRANSans(FaNum).ttf</string>
+		<string>IRANSansMobile(FaNum)_Bold.ttf</string>
+		<string>IRANSansMobile(FaNum)_Light.ttf</string>
+		<string>IRANSansMobile(FaNum)_Medium.ttf</string>
+		<string>IRANSansMobile(FaNum)_UltraLight.ttf</string>
+		<string>IRANSansMobile(FaNum).ttf</string>
+		<string>IRANSansWeb(FaNum)_Bold.ttf</string>
+		<string>IRANSansWeb(FaNum)_Light.ttf</string>
+		<string>IRANSansWeb(FaNum)_Medium.ttf</string>
+		<string>IRANSansWeb(FaNum)_UltraLight.ttf</string>
+		<string>IRANSansWeb(FaNum).ttf</string>
+		<string>IRANSans_Bold.ttf</string>
+		<string>IRANSans_Light.ttf</string>
+		<string>IRANSans_Medium.ttf</string>
+		<string>IRANSans_UltraLight.ttf</string>
+		<string>IRANSans.ttf</string>
+		<string>IRANSansMobile_Bold.ttf</string>
+		<string>IRANSansMobile_Light.ttf</string>
+		<string>IRANSansMobile_Medium.ttf</string>
+		<string>IRANSansMobile_UltraLight.ttf</string>
+		<string>IRANSansMobile.ttf</string>
+		<string>IRAN Sans-Mobile(NoEn).ttf</string>
+		<string>IRANSansMobile(NoEn) ultralight.ttf</string>
+		<string>IRANSansMobile(NoEn)_Bold.ttf</string>
+		<string>IRANSansMobile(NoEn)_Light.ttf</string>
+		<string>IRANSansMobile(NoEn)_Medium.ttf</string>
+		<string>IRANSansMobile(NoEn)_ultralight.ttf</string>
+		<string>IRANSansWeb(NoEn)_Bold.ttf</string>
+		<string>IRANSansWeb(NoEn)_Light.ttf</string>
+		<string>IRANSansWeb(NoEn)_Medium.ttf</string>
+		<string>IRANSansWeb(NoEn)_UltraLight.ttf</string>
+		<string>IRANSansWeb(NoEn).ttf</string>
+		<string>IRANSans(Small)_Bold.ttf</string>
+		<string>IRANSans(Small)_Light.ttf</string>
+		<string>IRANSans(Small)_Medium.ttf</string>
+		<string>IRANSans(Small)_UltraLight.ttf</string>
+		<string>IRANSans(Small).ttf</string>
+		<string>IRANSansWeb_Bold.ttf</string>
+		<string>IRANSansWeb_Light.ttf</string>
+		<string>IRANSansWeb_Medium.ttf</string>
+		<string>IRANSansWeb_UltraLight.ttf</string>
+		<string>IRANSansWeb.ttf</string>
+	</array>
 </dict>
 </plist>
